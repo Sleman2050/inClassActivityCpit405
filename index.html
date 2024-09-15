@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When2Meet</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    <meta name="description" content="a web application for scheduling that lets users make events, input their availability, and discover shared free times among participants">
+    <meta name="author" content="Sulaiman Bajaifer 2135100">
+    
+       
+   
+
+
+</head>
+
+<header>
+    <h1>When2Meet</h1>
+
+
+    <nav>
+        <ul>
+         
+            
+        <li> <a href="#create">Create event</a></li>
+        <li><a href="#select">Select availability</a></li>
+        <li><a href="#view">View results</a></li>
+        <li> <a href="#signUp">Sign up</a></li>
+        <li > <a href="#about">About us</a></li>
+     
+    
+    </ul>
+       
+        
+        
+       
+      </nav>
+
+      
+
+</header>
+
+<body>
+    <div id="create">
+    <h2>Create event</h2>
+    <label for="eventName">Event Name</label>
+    <input type="text" id = "name" name="nameVariable" required>
+    <label for="eventDesc">Event description</label>
+    <textarea id = "eventDescription" name="descVariable" required></textarea>
+    <label for="startDate">Start Date</label>
+    <input type="date" name="startDateVariable" id="StartDate" required>
+    <label for="endDate">End Date</label>
+    <input type="date" name="endDateVariable" id="endDate" required>
+    <label for="time">Time Increament:</label>
+    <select name="timeInc" id="time">
+        <option value="15 minutes">15 minutes</option>
+        <option value="30 minutes">30 minutes</option>
+        <option value="45 minutes">45 minutes</option>
+        <option value="1 hour">1 hour</option>
+      </select>
+      <input type="submit" value="Create event">
+
+    </div>
+
+
+    <div id="select">
+<h2>Input Availability</h2>
+
+
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+      <tr>
+        <td>9:00 AM</td>
+        <td><input type="checkbox" name="availability"></td>
+        <td><input type="checkbox" name="availability"></td>
+        <td><input type="checkbox" name="availability"></td>
+        <td><input type="checkbox" name="availability"></td>
+        <td><input type="checkbox" name="availability"></td>
+      </tr>
+     
+    </table>
+    <button type="submit">Submit Availability</button>
+  
+
+
+    </div>
+    
+
+    <div id="view">
+    <h2>View Results</h2>
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+      <tr>
+        <td>9:00 AM</td>
+        <td>3 Available</td>
+        <td>2 Available</td>
+        <td>4 Available</td>
+        <td>1 Available</td>
+        <td>5 Available</td>
+      </tr>
+    
+    </table>
+    <br></br>
+    <label for="link">Shareable Link: </label>
+
+</div>
+
+    
+<div id="signUp">
+    <a       id="shareLinkID"  href="#">www.when2meet.com/event?id=123456</a>
+    
+    
+      <h2>Sign Up</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        
+        <button type="submit">Sign Up</button>
+      </form>
+
+    </div>    
+
+
+</body>
+
+
+<footer class="footer">
+    <p>&copy; 2024 When2Meet. All right reserved</p>
+  </footer>
+
+</html>
